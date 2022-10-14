@@ -2,6 +2,7 @@ package aplicativo;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -49,6 +50,17 @@ public class Principal {
 		em.close();
 		emf.close();
 		*/
-	}
-
+		
+		// Atualizando um paciente da base de dados;
+		
+		/*
+		em.getTransaction().begin();
+		Paciente p = em.find(Paciente.class,2);
+		p.setEmail("Juanita02@ig.com.br");
+		em.getTransaction().commit();
+		em.close();
+		emf.close();
+		*/
+		
+		}
 }
